@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;list-style-position:outside;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing:0;}
+
+body {
+    font-family: 'Cabin-Regular','Arial','Helvetica','sans-serif'; /* Шрифт на веб-странице */
+	background: #1B3B3A url(img/nav.jpg) left 250px repeat-x;
+}
+
+#container {
+	width: 900px; /* Ширина слоя */
+    margin: auto; /* Выравнивание по центру */
+}
+header {
+    background: url(img/header.png) right center no-repeat;
+    height: 252px;
+	overflow: hidden;
+}
+header .logo {
+	display: block;
+	position: relative; top:48px; padding-left:20px;
+}
+header .logo img {
+	display: block;
+}
+ nav {
+    position: absolute; top:250px;
+	margin: auto;
+	height: 50px;
+	
+} 
+
+nav ul { 
+    padding: 14px 0 0;
+	/*margin: 12px;*/
+    /*padding-left:float;*/
+    /*text-align:center;*/
+    float:left;
+	font: bold 14pt Arial, Helvetica, sans-serif;
+}
+nav li {
+	padding-right: 10px;
+    display:inline;
+}
+nav A { 
+	text-decoration: none; 
+	color: black;
+} 
+
+nav .cart {
+	background: url(img/button.jpg) right 0px no-repeat;
+	width: 258px;
+	height: 50px;
+	/*padding: 1px 0 0;*/
+	cursor: pointer;
+	float:right;
+	display: block;
+	text-align: right;padding: 16px 65px 0;
+	font: 13pt Arial, Helvetica, sans-serif; color: white;
+}
+.total {
+	margin: 12px; color: #FFD64C;
+}
+
+aside {
+	background: #152D2D; /* Цвет фона */
+	width: 200px; /* Ширина колонки */
+	/*height: 150px;*/
+	/*float:left;*/
+	border-radius: 15px;
+	margin-top:60px;
+	
+}
+article {
+	background: #152D2D url(img/background.png) center no-repeat;
+	position: absolute; 
+	margin-left: 220px;
+	height: 490px;
+	width: 680px;
+	border-radius: 15px;
+	margin-top:60px;
+}
+.side {
+	padding: 10px 10px 0;
+}
+
+.photo {
+    background: #d9dabb; /* Цвет фона */
+    width: 150px; /* Ширина */
+    margin: 0 10px 10px 0; /* Отступы */
+    padding: 10px 0; /* Поля сверху и снизу */
+    text-align: center; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+}
+   .photo img {
+    border: 2px solid #8b8e4b; /* Параметры рамки */
+}
