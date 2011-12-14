@@ -4,42 +4,46 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>test</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <!--[if IE]>
+    <link href="css/webfont.css" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
+
 <div id="container">
 
     <header> 
         <a class="logo" href="home">
-            <img src="img/logo.png" alt="" />
+            <img src="img/logo2.png" alt="" />
         </a>
     </header>
     
     <article>
-        <h1>Card Catalog \ alpha</h1>
+        <p class="viewas">View as
+            <a href="#"><img src="img/icons/view.png" alt=""></a>
+            <a href="#"><img class="as" src="img/icons/viewas.png" alt=""></a>
+        </p>
+		<h1>Card Catalog \ alpha</h1>
         
         <ul class="gallery">
             <li>
                 <a href="#"><img src="img/thumb1.jpg" alt="" /></a>
-                <dl>
+                <!--<dl>
                     <dt>Price</dt>
                     <dd>$6.5</dd>
                     <dt>Available</dt>
                     <dd>3</dd>
                 </dl>
-                <a href="#" class="more">Details</a>
+                <a href="#" class="more">Details</a><!-->
             </li>
             <li><a href="#"><img src="img/thumb2.jpg" alt="" /></a></li>
             <li><a href="#"><img src="img/thumb3.jpg" alt="" /></a></li>
             <li><a href="#"><img src="img/thumb4.jpg" alt="" /></a></li>
         </ul>
+        <a href="#" class="top"></a>
+        <a href="#" class="bottom"></a>
         
-        <p class="viewas">View as
-            <a href="#"><img src="img/icons/list.gif" alt=""></a>
-            <a href="#"><img src="img/icons/list.gif" alt=""></a>
-        </p>
         
     </article>
 
@@ -64,17 +68,17 @@
                 <a href="#" class="btn">Sign Up</a>
             </p>
         </form>
-        <a href="#" class="more">Can`t access you account</a>
+        <p class="more"><a href="#" >Can`t access you account?</a></p>
      </aside>
 
      <aside style="margin-top: 20px;">
         <h3>Search</h3>
         <form action="#" class="search">
             <div>
-                <input name="" type="text" />
+                <input type="text" name="search"  />
             </div>
         </form>
-        <a href="#" class="more">Advanced Search</a>
+        <p class="more"><a href="#" >Advanced Search</a></p>
      </aside>
 
      <aside style="margin-top: 20px;">
@@ -104,5 +108,6 @@
     </nav>
     
 </div>
+
 </body>
 </html>

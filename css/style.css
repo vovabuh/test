@@ -25,14 +25,20 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: '';content: none;}
 table {border-collapse: collapse;border-spacing:0;}
 
-body {
-    font-family: 'Cabin-Regular','Arial','Helvetica','sans-serif'; /* Шрифт на веб-странице */
+html {
+    font: 10pt 'Cobin', sans-serif; 
 	background: #1B3B3A url(img/nav.jpg) left 250px repeat-x;
+	
+}
+
+body {
+	background: url(img/back1.png) center 300px no-repeat transparent;
+	height: 1000px;
 }
 
 #container {
-	width: 900px; /* Ширина слоя */
-    margin: auto; /* Выравнивание по центру */
+	width: 930px; 
+    margin: auto; 
 }
 header {
     background: url(img/header.png) right center no-repeat;
@@ -50,20 +56,19 @@ header .logo img {
     position: absolute; top:250px;
 	margin: auto;
 	height: 50px;
-	
+	width:910px;
 } 
 
 nav ul { 
-    padding: 14px 0 0;
-	/*margin: 12px;*/
-    /*padding-left:float;*/
-    /*text-align:center;*/
+    padding: 14px 0 0 5px;
     float:left;
-	font: bold 14pt Arial, Helvetica, sans-serif;
+	font: bold 14pt 'Cobin', sans-serif;
 }
 nav li {
-	padding-right: 10px;
+	padding:0 12px 0 12px;
+	
     display:inline;
+	border-right:2px solid black;
 }
 nav A { 
 	text-decoration: none; 
@@ -72,49 +77,163 @@ nav A {
 
 nav .cart {
 	background: url(img/button.jpg) right 0px no-repeat;
-	width: 258px;
+	width: 248px;
 	height: 50px;
-	/*padding: 1px 0 0;*/
 	cursor: pointer;
 	float:right;
 	display: block;
 	text-align: right;padding: 16px 65px 0;
-	font: 13pt Arial, Helvetica, sans-serif; color: white;
+	font: 12pt 'Cobin', sans-serif; color: white;
 }
 .total {
 	margin: 12px; color: #FFD64C;
 }
 
-aside {
-	background: #152D2D; /* Цвет фона */
-	width: 200px; /* Ширина колонки */
-	/*height: 150px;*/
-	/*float:left;*/
-	border-radius: 15px;
-	margin-top:60px;
-	
-}
+
 article {
-	background: #152D2D url(img/background.png) center no-repeat;
 	position: absolute; 
 	margin-left: 220px;
-	height: 490px;
-	width: 680px;
+	height: 462px;
+	width: 621px;
 	border-radius: 15px;
 	margin-top:60px;
+	background: url(img/article2.png) 0 0 repeat;
+	padding:15px 40px 13px 19px;
 }
+article h1 {color:#FFD64C;font-family:'Cobin', sans-serif;font-size:22px;margin-bottom:7px;}
+article {}
+article .top {background:url(img/boom.png) no-repeat;position: absolute; top:136px;right:15px;width:20px;height:23px;display:block;}
+article .bottom {background:url(img/boom2.png) no-repeat;position:absolute; bottom:114px;right:15px;width:20px;height:23px;display:block;}
+.viewas {color:#FFD64C;font-family:'Cobin', sans-serif;font-size:18px;top:270px;float: right;margin-right:15px;}
+.viewas .as {position: relative;top: 3px;}
+aside {
+	width: 200px; 
+	border-radius: 15px;
+	margin-top:60px;
+	background: url(img/article2.png) 0 0 repeat;
+	padding-bottom:15px;
+	padding-top:6px;
+}
+
+aside h3 {
+   color:#ffd64c;
+   font-family:'Cobin', sans-serif; 
+   font-size:20px;
+   margin-left:18px;
+   margin-top:5px;
+   margin-bottom:5px;
+ }
+ aside form {
+    margin-top:10px;
+	
+}
+
+aside form ol {
+    width:100%;
+}
+
+aside form ol li {
+    margin-bottom:12px;
+}
+aside ul li {
+	padding-top:6px;
+	padding-right:6px;
+	margin-left:18px;
+}
+aside ul li a{
+	font-family:'Cobin', sans-serif; 
+    font-size:16px;
+	color:white;
+	text-decoration: none;
+	padding-top:6px;
+}
+
+.more {
+	
+	padding:10px 0 0 16px;
+	
+}
+.more a {
+	font-family:'Cobin', sans-serif; 
+    font-size:14px;
+	color:#ffd64c;
+	text-decoration: none;
+}
+
+.search input {
+	background-color:#214b4a;
+	font-family:'Cobin', sans-serif; 
+    font-size:16px;
+	width:135px;
+    height:32px;
+    padding:0 18px;
+    border:none;
+	border-radius:1px;
+	margin-left:15px;
+	
+}
+aside form ol input {
+    background-color:#214b4a;
+    color:#fff;
+    font-family:'Cobin', sans-serif; 
+    font-size:16px;
+    width:135px;
+    height:32px;
+    padding:0 20px;
+    border:none;
+    border-radius:1px;
+	margin-left:12px;
+	margin-top:5px;
+}
+aside .name {
+	color:white;
+	font-family:'Cobin', sans-serif; 
+	font-size:15px;
+	padding:16px 0 0 16px;
+}
+aside form .btn input{
+    background:url(img/p.btn-input.gif) no-repeat;
+    font-size:20px;
+    width:78px;
+    height:32px;
+    margin:1px 0 0 15px;
+    border:none;
+    cursor:pointer;
+}
+aside form .btn a{
+    background-image:url(img/p.btn-a.gif);
+	background-repeat: no-repeat;
+    font-size:20px;
+	line-height: 32px;
+	float: right;
+    color:white;
+	text-decoration: none;
+	width:85px;
+    height:35px;
+	text-align: center;
+    margin-right:11px;
+    /*border:1px solid #214b4a;*/
+    cursor:pointer;
+}
+
 .side {
 	padding: 10px 10px 0;
 }
 
 .photo {
-    background: #d9dabb; /* Цвет фона */
+    
     width: 150px; /* Ширина */
     margin: 0 10px 10px 0; /* Отступы */
     padding: 10px 0; /* Поля сверху и снизу */
     text-align: center; /* Выравнивание по центру */
     display: inline-block; /* Строчно-блочный элемент */
+	background: #d9dabb;
+	
 }
    .photo img {
     border: 2px solid #8b8e4b; /* Параметры рамки */
 }
+
+.gallery {}
+.gallery li{margin-right:11px;margin-bottom:10px;float:left;}
+.gallery li a img{border:2px solid #000;}
